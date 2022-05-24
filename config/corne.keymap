@@ -14,7 +14,6 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -40,10 +39,10 @@
 
         layer_lower {
             bindings = <
- &trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT          &kp CARET   &kp AMPS  &kp KP_MULTIPLY  &kp LPAR  &kp RPAR     &trans
- &trans    &trans  &trans    &trans    &trans     &trans          &kp MINUS  &kp EQUAL         &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
- &trans    &trans  &trans    &trans    &trans     &trans          &kp UNDER   &kp PLUS         &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE
-                             &trans    &trans     &trans             &trans     &trans           &trans
+          &none     &none     &none    &kp UP    &kp PAGE_UP    &none             &none    &kp PAGE_UP    &kp UP   &kp LPAR  &kp RPAR              &none
+   &kp LEFT_ALT  &kp HOME  &kp LEFT  &kp DOWN      &kp RIGHT  &kp END          &kp HOME       &kp LEFT  &kp DOWN  &kp RIGHT   &kp END              &none
+ &kp LEFT_SHIFT     &none     &none     &none  &kp PAGE_DOWN    &none             &none  &kp PAGE_DOWN     &none      &none     &none  &kp RIGHT_CONTROL
+                                       &trans          &mo 3   &trans            &trans         &trans   &kp DEL
             >;
         };
 
